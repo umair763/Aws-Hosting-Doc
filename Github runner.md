@@ -22,25 +22,7 @@ This guide explains how to connect your AWS EC2 instance as a **GitHub Actions s
    ```bash
    sudo ./svc.sh install
    sudo ./svc.sh start
-
-### 🔐 Step 2:  GitHub Self-Hosted Runner Setup (EC2)
-
-3. Click **New self-hosted runner**.
-4. Choose **Linux** as the operating system.
-5. From **PowerShell (Windows)** or any terminal (Linux/macOS), make sure you are already logged into your AWS EC2 server using the **SSH command** from the previous section.
-6. Run the commands provided by GitHub for the runner setup **in your EC2 terminal**:
-   - Start with the **Download** section.
-   - Continue with the **Configure** section.
-   - **Skip** the `./run.sh` command usually shown at the end of the configure section.
-7. Keep all settings as **default**, unless you require advanced configurations.
-8. Once you reach the step where `./run.sh` is mentioned, instead run the following commands to install and start the runner as a **service**:
-
-   ```bash
-   sudo ./svc.sh install
-   sudo ./svc.sh start
-
-
-### 🔐 Step 3: Configure Environment Variables in GitHub
+### 🔐 Step 2: Configure Environment Variables in GitHub
 
 1. Go back to your **GitHub repository settings**.
 2. From the sidebar, select **Secrets and variables → Actions**.
@@ -50,7 +32,7 @@ This guide explains how to connect your AWS EC2 instance as a **GitHub Actions s
    This will be used to generate a `.env` file inside the runner during deployment.
 
 
-### ⚙️ Step 4: Configure GitHub Actions Workflow for Node.js Deployment
+### ⚙️ Step 3: Configure GitHub Actions Workflow for Node.js Deployment
 
 1. Go to your GitHub repository.
 2. Click on the **Actions** tab.
