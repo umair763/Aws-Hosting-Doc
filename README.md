@@ -20,3 +20,5 @@ We’ve organized the guide into clear, easy-to-follow sections — so you can t
 
 5. **SSL Configuration**
    Secure your website with a trusted, free SSL certificate using Certbot.
+
+⚠️ Important: The sequence of this guide is crucial. Please follow the steps in the exact order listed above to ensure a smooth and successful setup.
