@@ -1,9 +1,5 @@
 # Setting up GitHub Self-Hosted Runner and CI/CD Workflow
 
-This guide explains how to connect your AWS EC2 instance as a **GitHub Actions self-hosted runner**, configure environment variables, and set up a **Node.js CI/CD pipeline**.
-
----
-
 ## 🔧 Step 1: Configure GitHub Self-Hosted Runner
 1. Go to your **GitHub backend repository**.
 2. Navigate to:
